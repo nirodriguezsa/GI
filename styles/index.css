@@ -10,13 +10,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Style the header with a grey background and some padding */
+/* Se agrega padding*/
 .header {
   overflow: hidden;
   padding: 2px 2px;
 }
 
-/* Style the header links */
+/* Estilo de header*/
 .header a {
   float: left;
   color: rgb(255, 255, 255);
@@ -29,7 +29,7 @@ body {
   border-radius: 4px;
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+/* Estilos del logo*/
 .header a.logo {
   padding: 6px;
   margin: 0;
@@ -37,25 +37,25 @@ body {
   padding: 0;
 }
 
-/* Change the background color on mouse-over */
+/* Cuando se pasa el mouse por encima*/
 .header a:hover {
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738),
     0 0 0.2em rgba(255, 255, 255, 0.738);
 }
 
-/* Style the active/current link*/
+/*  cambio de color cuando se le de click al menu para que pase a la ventana correspondiente*/
 .header a.active {
   color: rgb(0, 183, 255);
 }
 
-/* Float the link section to the right */
+/* Envia texto a la derecha */
 .header-right {
   float: right;
   margin: 2% 3%;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+/* Se pone el menu hacia abajo cuando esta en pantallas pequeñas */
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -122,6 +122,8 @@ ul{
   text-align: left;
   /* text-justify: inter-cluster; */
 }
+
+/* Decoracion de los links y textos */
 
 ul p{
   color: rgba(186, 186, 186, 0.781);
