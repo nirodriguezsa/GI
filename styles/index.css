@@ -1,0 +1,138 @@
+/* eliminamos culaquier borde o espacio que exista por defecto */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/back.png");
+  background-color: rgb(61, 61, 61);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  padding: 2px 2px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  color: rgb(159, 159, 159);
+  padding: 8px;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  padding: 6px;
+  margin: 0;
+  margin: 1% 2%;
+  padding: 0;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738),
+    0 0 0.2em rgba(255, 255, 255, 0.738);
+}
+
+/* Style the active/current link*/
+.header a.active {
+  color: rgb(0, 183, 255);
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  margin: 2% 3%;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* Se agregan estilos al index*/
+.image-index {
+  text-align: center;
+  border-radius: 70px;
+  width: 70%;
+  margin: 0px 15% 5% 15%;
+}
+
+.main-index {
+  color: rgba(240, 248, 255, 0.798);
+  display: inline-block;
+  width: 90%;
+  margin: 0% 5%;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 4%;
+  font-size: 40px;
+}
+
+.text-index {
+  margin: 0px 10%;
+  font-size: 20px;
+}
+
+/* Estilos a los personajes */
+
+.image-character {
+  float: left;
+  border-radius: 50%;
+  width: 300px;
+  margin: 0px 5% 2% 0px;
+}
+
+.main-character {
+  color: rgba(240, 248, 255, 0.798);
+  display: inline-block;
+  width: 60%;
+  margin: 0% 20%;
+}
+
+.text-index {
+  margin: 0px 10%;
+  font-size: 20px;
+}
+
+ul{
+  color: aliceblue;
+  width: 60%;
+  margin: 0% 20%;
+  text-align: left;
+  /* text-justify: inter-cluster; */
+}
+
+ul p{
+  color: rgba(186, 186, 186, 0.781);
+}
+
+p a{
+  color: aqua;
+  text-decoration: none;
+}
+
+li a{
+  color: aqua;
+  text-decoration: none;
+}
