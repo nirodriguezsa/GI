@@ -2,139 +2,447 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../assets/back.png");
   background-color: rgb(61, 61, 61);
   background-repeat: no-repeat;
+  /* Movil dependiendo del tamaño de pantalla */
   background-attachment: fixed;
+  /* Cubre la totalidad de la pantalla */
   background-size: cover;
+  /* Funte por defecto */
   font-family: "Montserrat", sans-serif;
 }
+  /* Se pone el menu hacia abajo en versiones anteriores */
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;}
 
-/* Se agrega padding*/
-.header {
-  overflow: hidden;
-  padding: 2px 2px;
-}
+/* * para pantallas que midan mas de 1200px de ancho.  */
+@media only screen and (min-width: 1200px) {
+  body {
+    /* Se carga la imagen de fondo de acuerdo al tamaño de pantalla*/
+    background-image: url("../assets/Fondo3.jpeg");
+  }
 
-/* Estilo de header*/
-.header a {
-  float: left;
-  color: rgb(255, 255, 255);
-  color: rgb(159, 159, 159);
-  padding: 8px;
-  margin: 0 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
+  /* Se agrega padding, o espacios a la barra de navegacion*/
+  .header {
+    overflow: hidden;
+    padding: 2px 2px;
+  }
 
-/* Estilos del logo*/
-.header a.logo {
-  padding: 6px;
-  margin: 0;
-  margin: 1% 2%;
-  padding: 0;
-}
-
-/* Cuando se pasa el mouse por encima*/
-.header a:hover {
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738),
-    0 0 0.2em rgba(255, 255, 255, 0.738);
-}
-
-/*  cambio de color cuando se le de click al menu para que pase a la ventana correspondiente*/
-.header a.active {
-  color: rgb(0, 183, 255);
-}
-
-/* Envia texto a la derecha */
-.header-right {
-  float: right;
-  margin: 2% 3%;
-}
-
-/* Se pone el menu hacia abajo cuando esta en pantallas pequeñas */
-@media screen and (max-width: 500px) {
+  /* Estilo de header*/
   .header a {
-    float: none;
-    display: block;
-    text-align: left;
+    /* Flotante hacia la izquierda */
+    float: left;
+    color: rgb(255, 255, 255);
+    color: rgb(159, 159, 159);
+    /* Bordes */
+    padding: 8px;
+    margin: 0 12px;
+    /* Se eliminan los estilos por defecto que tienen los enlaces */
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
   }
+
+  /* Estilos del logo*/
+  .header a.logo {
+    padding: 6px;
+    margin: 0;
+    margin: 1% 2%;
+    padding: 0;
+  }
+
+  /* Cuando se pasa el mouse por encima*/
+  .header a:hover {
+    /* Se vuelve blanco */
+    color: rgb(255, 255, 255);
+    /* Se agrega una sombra suave */
+    text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738),
+      0 0 0.2em rgba(255, 255, 255, 0.738);
+  }
+
+  /*  cambio de color cuando se le de click al menu para que pase a la ventana correspondiente*/
+  .header a.active {
+    color: rgb(0, 183, 255);
+  }
+
+  /* Envia texto a la derecha */
   .header-right {
-    float: none;
+    float: right;
+    margin: 2% 3%;
+  }
+
+  /* Se pone el menu hacia abajo cuando esta en pantallas pequeñas */
+  /* @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  } */
+
+  /* Se agregan estilos al index*/
+  .image-index {
+    text-align: center;
+    border-radius: 70px;
+    width: 70%;
+    margin: 0px 15% 5% 15%;
+  }
+
+  .main-index {
+    color: rgba(240, 248, 255, 0.798);
+    display: inline-block;
+    width: 90%;
+    margin: 0% 5%;
+  }
+
+  h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 40px;
+  }
+
+  .text-index {
+    margin: 0px 10%;
+    font-size: 20px;
+  }
+
+  /* Estilos a los personajes */
+
+  .image-character {
+    float: left;
+    /* Para que se vean imagenes circulares */
+    border-radius: 50%;
+    width: 300px;
+    margin: 0px 5% 2% 0px;
+  }
+
+  .main-character {
+    color: rgba(240, 248, 255, 0.798);
+    display: inline-block;
+    width: 60%;
+    margin: 0% 20%;
+  }
+
+  .text-index {
+    margin: 0px 10%;
+    font-size: 20px;
+  }
+
+  ul {
+    color: aliceblue;
+    width: 60%;
+    margin: 0% 20%;
+    text-align: left;
+    /* text-justify: inter-cluster; */
+  }
+
+  /* Decoracion de los links y textos */
+
+  ul p {
+    color: rgba(186, 186, 186, 0.781);
+  }
+
+  p a {
+    color: aqua;
+    text-decoration: none;
+  }
+
+  li a {
+    color: aqua;
+    text-decoration: none;
   }
 }
 
-/* Se agregan estilos al index*/
-.image-index {
-  text-align: center;
-  border-radius: 70px;
-  width: 70%;
-  margin: 0px 15% 5% 15%;
+/* para pantallas que midan entre 800px y 1200px de ancho */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+  body {
+    /* Se carga la imagen de fondo de acuerdo al tamaño de pantalla*/
+    background-image: url("../assets/back.png");
+  }
+
+  /* Se agrega padding, o espacios a la barra de navegacion*/
+  .header {
+    overflow: hidden;
+    padding: 2px 2px;
+  }
+
+  /* Estilo de header*/
+  .header a {
+    /* Flotante hacia la izquierda */
+    float: left;
+    color: rgb(255, 255, 255);
+    color: rgb(159, 159, 159);
+    /* Bordes */
+    padding: 8px;
+    margin: 0 12px;
+    /* Se eliminan los estilos por defecto que tienen los enlaces */
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  /* Estilos del logo*/
+  .header a.logo {
+    padding: 6px;
+    margin: 0;
+    margin: 1% 2%;
+    padding: 0;
+  }
+
+  /* Cuando se pasa el mouse por encima*/
+  .header a:hover {
+    /* Se vuelve blanco */
+    color: rgb(255, 255, 255);
+    /* Se agrega una sombra suave */
+    text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738),
+      0 0 0.2em rgba(255, 255, 255, 0.738);
+  }
+
+  /*  cambio de color cuando se le de click al menu para que pase a la ventana correspondiente*/
+  .header a.active {
+    color: rgb(0, 183, 255);
+  }
+
+  /* Envia texto a la derecha */
+  .header-right {
+    float: right;
+    margin: 2% 3%;
+  }
+
+  /* Se pone el menu hacia abajo cuando esta en pantallas pequeñas */
+  /* @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  } */
+
+  /* Se agregan estilos al index*/
+  .image-index {
+    text-align: center;
+    border-radius: 70px;
+    width: 70%;
+    margin: 0px 15% 5% 15%;
+  }
+
+  .main-index {
+    color: rgba(240, 248, 255, 0.798);
+    display: inline-block;
+    width: 90%;
+    margin: 0% 5%;
+  }
+
+  h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 40px;
+  }
+
+  .text-index {
+    margin: 0px 10%;
+    font-size: 20px;
+  }
+
+  /* Estilos a los personajes */
+
+  .image-character {
+    float: left;
+    /* Para que se vean imagenes circulares */
+    border-radius: 50%;
+    width: 300px;
+    margin: 0px 5% 2% 0px;
+  }
+
+  .main-character {
+    color: rgba(240, 248, 255, 0.798);
+    display: inline-block;
+    width: 60%;
+    margin: 0% 20%;
+  }
+
+  .text-index {
+    margin: 0px 10%;
+    font-size: 20px;
+  }
+
+  ul {
+    color: aliceblue;
+    width: 60%;
+    margin: 0% 20%;
+    text-align: left;
+    /* text-justify: inter-cluster; */
+  }
+
+  /* Decoracion de los links y textos */
+
+  ul p {
+    color: rgba(186, 186, 186, 0.781);
+  }
+
+  p a {
+    color: aqua;
+    text-decoration: none;
+  }
+
+  li a {
+    color: aqua;
+    text-decoration: none;
+  }
 }
 
-.main-index {
-  color: rgba(240, 248, 255, 0.798);
-  display: inline-block;
-  width: 90%;
-  margin: 0% 5%;
-}
+/* para pantallas que midan menos de 800px */
+@media only screen and (max-width: 800px) {
+  body {
+    /* Se carga la imagen de fondo de acuerdo al tamaño de pantalla*/
+    background-image: url("../assets/Fondo2.jpeg");
+  }
 
-h1 {
-  color: aliceblue;
-  text-align: center;
-  margin-bottom: 4%;
-  font-size: 40px;
-}
+  /* Se agrega padding, o espacios a la barra de navegacion*/
+  .header {
+    overflow: hidden;
+    padding: 2px 2px;
+  }
 
-.text-index {
-  margin: 0px 10%;
-  font-size: 20px;
-}
+  /* Estilo de header*/
+  .header a {
+    /* Flotante hacia la izquierda */
+    float: left;
+    color: rgb(255, 255, 255);
+    color: rgb(159, 159, 159);
+    /* Bordes */
+    padding: 8px;
+    margin: 0 12px;
+    /* Se eliminan los estilos por defecto que tienen los enlaces */
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
 
-/* Estilos a los personajes */
+  /* Estilos del logo*/
+  .header a.logo {
+    padding: 6px;
+    margin: 0;
+    margin: 1% 2%;
+    padding: 0;
+  }
 
-.image-character {
-  float: left;
-  border-radius: 50%;
-  width: 300px;
-  margin: 0px 5% 2% 0px;
-}
+  /* Cuando se pasa el mouse por encima*/
+  .header a:hover {
+    /* Se vuelve blanco */
+    color: rgb(255, 255, 255);
+    /* Se agrega una sombra suave */
+    text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738),
+      0 0 0.2em rgba(255, 255, 255, 0.738);
+  }
 
-.main-character {
-  color: rgba(240, 248, 255, 0.798);
-  display: inline-block;
-  width: 60%;
-  margin: 0% 20%;
-}
+  /*  cambio de color cuando se le de click al menu para que pase a la ventana correspondiente*/
+  .header a.active {
+    color: rgb(0, 183, 255);
+  }
 
-.text-index {
-  margin: 0px 10%;
-  font-size: 20px;
-}
+  /* Envia texto a la derecha */
+  .header-right {
+    float: right;
+    margin: 2% 3%;
+  }
 
-ul{
-  color: aliceblue;
-  width: 60%;
-  margin: 0% 20%;
-  text-align: left;
-  /* text-justify: inter-cluster; */
-}
+  /* Se pone el menu hacia abajo cuando esta en pantallas pequeñas */
+  /* @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  } */
 
-/* Decoracion de los links y textos */
+  /* Se agregan estilos al index*/
+  .image-index {
+    text-align: center;
+    border-radius: 70px;
+    width: 70%;
+    margin: 0px 15% 5% 15%;
+  }
 
-ul p{
-  color: rgba(186, 186, 186, 0.781);
-}
+  .main-index {
+    color: rgba(240, 248, 255, 0.798);
+    display: inline-block;
+    width: 90%;
+    margin: 0% 5%;
+  }
 
-p a{
-  color: aqua;
-  text-decoration: none;
-}
+  h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 40px;
+  }
 
-li a{
-  color: aqua;
-  text-decoration: none;
+  .text-index {
+    margin: 0px 10%;
+    font-size: 20px;
+  }
+
+  /* Estilos a los personajes */
+
+  .image-character {
+    float: left;
+    /* Para que se vean imagenes circulares */
+    border-radius: 50%;
+    width: 300px;
+    margin: 0px 5% 2% 0px;
+  }
+
+  .main-character {
+    color: rgba(240, 248, 255, 0.798);
+    display: inline-block;
+    width: 60%;
+    margin: 0% 20%;
+  }
+
+  .text-index {
+    margin: 0px 10%;
+    font-size: 20px;
+  }
+
+  ul {
+    color: aliceblue;
+    width: 60%;
+    margin: 0% 20%;
+    text-align: left;
+    /* text-justify: inter-cluster; */
+  }
+
+  /* Decoracion de los links y textos */
+
+  ul p {
+    color: rgba(186, 186, 186, 0.781);
+  }
+
+  p a {
+    color: aqua;
+    text-decoration: none;
+  }
+
+  li a {
+    color: aqua;
+    text-decoration: none;
+  }
 }

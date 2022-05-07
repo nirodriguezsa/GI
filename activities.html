@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lockout | Actividades</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/halo.png">
-    <link href="./styles/index.css" rel="stylesheet" type="text/css" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200&display=swap');
-    </style>
-  </head>
-  <body>
-    <!-- Cabecera que sera usada en todas las paginas -->
-    <header class="header">
-      <a href="index.html" class="logo"
-        ><img src="./assets/halo.png" alt="Halo logo" width="100"
-      /></a>
-      <div class="header-right">
-        <a href="index.html">Espacio</a>
-        <a href="character.html">Personajes</a>
-        <a class="active" href="activities.html">Actividades</a>
-        <a href="history.html">Historia</a>
-        <a href="credits.html">Creditos</a>
-      </div>
-    </header>
 
-    <h1>Actividades</h1>
-    <!-- Cuerpo principal de la pagina  -->
-    <div class="main-index">
-      <img
-        class="image-index"
-        src="./assets/actividades.jpeg"
-        alt="Batalla"
-        width="400"
-      />
-      <div>
-        <p  class="text-index">
-          Las actividades realizadas en este lugar son totalmente bélicas, donde se lucha por el control de las zonas y los cuellos de botella para asesinar a los enemigos, para ello está dispuesto un radar donde se podrán ver los enemigos y localizarlos, un arsenal de armas que requieren diferentes destrezas para lograr los objetivos, granadas y vehículos de guerra y más, que se podrán encontrar en el mapa para lograr liderar los rankings de bajas enemigas.
-        </p>
-        <br><br><br>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lockout | Actividades</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/halo.png">
+  <link href="./styles/index.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200&display=swap');
+  </style>
+</head>
+
+<body>
+  <!-- Cabecera que sera usada en todas las paginas -->
+  <header class="header">
+    <a href="index.html" class="logo"><img src="./assets/halo.png" alt="Halo logo" width="100" /></a>
+    <div class="header-right">
+      <a href="index.html">Espacio</a>
+      <a href="character.html">Personajes</a>
+      <a class="active" href="activities.html">Actividades</a>
+      <a href="history.html">Historia</a>
+      <a href="credits.html">Creditos</a>
     </div>
-  </body>
+  </header>
+
+  <h1>Actividades</h1>
+  <!-- Cuerpo principal de la pagina  -->
+  <div class="main-index">
+    <!-- Agrega video para dar contexto de las actividades y del mapa -->
+    <iframe class="image-index" width="80%" height="510"
+      src="https://www.youtube.com/embed/ucvrpwqHMKU?autoplay=1"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      poster="./assets/lock.jpeg"></iframe>
+    <div>
+      <p class="text-index">
+        Las actividades realizadas en este lugar son totalmente bélicas, donde se lucha por el control de las zonas y
+        los cuellos de botella para asesinar a los enemigos, para ello está dispuesto un radar donde se podrán ver los
+        enemigos y localizarlos, un arsenal de armas que requieren diferentes destrezas para lograr los objetivos,
+        granadas y vehículos de guerra y más, que se podrán encontrar en el mapa para lograr liderar los rankings de
+        bajas enemigas.
+      </p>
+      <br><br><br>
+    </div>
+  </div>
+</body>
+
 </html>
