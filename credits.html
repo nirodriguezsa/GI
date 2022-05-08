@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Cabecera del sitio con la configuracion -->
 <head>
+  <!-- Caracteres a usar -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Titulo del sitio que se mostrara en los navegadores -->
   <title>Lockout | Creditos</title>
+  <!-- Icono que se ve en las pestañas del navegador -->
   <link rel="shortcut icon" type="image/x-icon" href="./assets/halo.png">
   <link href="./styles/index.css" rel="stylesheet" type="text/css" />
   <style>
+    /* Como la fuente es externa y no viene instalada la importamos de Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200&display=swap');
   </style>
 </head>
 
 <body>
-      <!-- Cabecera que sera usada en todas las paginas -->
+  <!-- Menu desplegable para pantallas pequeñas -->
+  <nav class="header-small">
+    <input type="checkbox" id="menu">
+    <label for="menu"> ☰ </label>
+    <ul>
+      <li><a href="index.html">Espacio</a></li>
+      <li><a href="character.html">Personajes</a></li>
+      <li><a href="activities.html">Actividades</a></li>
+      <li><a href="history.html">Historia</a></li>
+      <li><a class="active" href="credits.html">Creditos</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cabecera que sera usada en dispositivos grandes -->
   <header class="header">
     <a href="index.html" class="logo"><img src="./assets/halo.png" alt="Halo logo" width="100" /></a>
     <div class="header-right">
@@ -25,11 +43,9 @@
       <a class="active" href="credits.html">Creditos</a>
     </div>
   </header>
-<!-- Titulo principal de map site -->
+  <!-- Titulo principal de map site -->
   <h1>Mapa del sitio</h1>
   <img class="image-index" src="./assets/sitemap.png" alt="encerrona" width="400" />
-  <a href="#otros">Espacio</a>
-
 
   <!-- Titulo de Creditos -->
   <h1>Creditos</h1>
@@ -84,6 +100,11 @@
     <p>Narrativa espacio</p>
     <li>
       <a href="https://halo.fandom.com/es/wiki/Encerrona_(mapa)<">https://halo.fandom.com/es/wiki/Encerrona_(mapa)</a>
+    </li>
+
+    <p>Video mostrando el mapa</p>
+    <li>
+      <a href="https://youtu.be/ucvrpwqHMKU<">https://youtu.be/ucvrpwqHMKU</a>
     </li>
 
   </ul>

@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Cabecera del sitio con la configuracion -->
+
 <head>
+  <!-- Caracteres a usar -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Titulo del sitio que se mostrara en los navegadores -->
   <title>Lockout | Historia</title>
-  <link rel="shortcut icon" type="image/x-icon" href="/assets/halo.png">
+  <!-- Icono que se ve en las pestañas del navegador -->
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/halo.png">
   <link href="./styles/index.css" rel="stylesheet" type="text/css" />
   <style>
+    /* Como la fuente es externa y no viene instalada la importamos de Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200&display=swap');
   </style>
 </head>
 
 <body>
-  <!-- Cabecera que sera usada en todas las paginas -->
+  <!-- Menu desplegable para pantallas pequeñas -->
+  <nav class="header-small">
+    <input type="checkbox" id="menu">
+    <label for="menu"> ☰ </label>
+    <ul>
+      <li><a href="index.html">Espacio</a></li>
+      <li><a href="character.html">Personajes</a></li>
+      <li><a href="activities.html">Actividades</a></li>
+      <li><a class="active" href="history.html">Historia</a></li>
+      <li><a href="credits.html">Creditos</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cabecera que sera usada en dispositivos grandes -->
   <header class="header">
     <a href="index.html" class="logo"><img src="./assets/halo.png" alt="Halo logo" width="100" /></a>
     <div class="header-right">
@@ -38,7 +57,7 @@
         quienes se vieron forzados a aventurarse al espacio y entrar en el conflicto. Los Forerunners, exhaustos de su
         guerra y tras haber analizado todas las posibles opciones, decidieron recurrir a su última opción: un arma
         definitiva en contra de los Flood. Utilizando una instalación conocida como "el Arca", construyeron gigantescas
-        estructuras en forma de anillo, los Halos. 
+        estructuras en forma de anillo, los Halos.
         <br><br>
         La matriz de Halos, una vez activa, destruiría toda la vida
         inteligente de la galaxia, forzando a los Flood a morir de hambre. Intentando resistir hasta el último momento,
@@ -52,7 +71,7 @@
 
         Decenas de miles de años después, en el Siglo XXVI, la humanidad, bajo el control gubernamental del Mando
         Espacial de las Naciones Unidas, o UNSC (United Nations Space Command), colonizó muchos planetas gracias al
-        desarrollo de los viajes interestelares a velocidades superiores a la de la luz. 
+        desarrollo de los viajes interestelares a velocidades superiores a la de la luz.
         <br><br>
         Los conflictos estallan entre
         las "colonias internas" y las más jóvenes y remotas "colonias externas" hasta escalar a una guerra civil. La

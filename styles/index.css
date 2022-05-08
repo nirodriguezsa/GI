@@ -1,8 +1,13 @@
 /* eliminamos culaquier borde o espacio que exista por defecto */
+
+/* Se usaran colores oscuros de fondo y letras color claro para crear resalte y buena UX/UI */
 body {
+  /* Margenes */
   margin: 0;
   padding: 0;
+  /* Color de fondo */
   background-color: rgb(61, 61, 61);
+  /* Solo 1 imagen */
   background-repeat: no-repeat;
   /* Movil dependiendo del tamaño de pantalla */
   background-attachment: fixed;
@@ -11,17 +16,23 @@ body {
   /* Funte por defecto */
   font-family: "Montserrat", sans-serif;
 }
-  /* Se pone el menu hacia abajo en versiones anteriores */
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;}
+/* Alineacion del header */
+.header a {
+  float: none;
+  display: block;
+  text-align: left;
+}
 
 /* * para pantallas que midan mas de 1200px de ancho.  */
 @media only screen and (min-width: 1200px) {
   body {
     /* Se carga la imagen de fondo de acuerdo al tamaño de pantalla*/
     background-image: url("../assets/Fondo3.jpeg");
+  }
+
+  /* Se oculta el menu desplegable para pantallas grandes */
+  .header-small{
+    display: none;
   }
 
   /* Se agrega padding, o espacios a la barra de navegacion*/
@@ -162,11 +173,100 @@ body {
 
 /* para pantallas que midan entre 800px y 1200px de ancho */
 @media only screen and (min-width: 800px) and (max-width: 1200px) {
-
   body {
     /* Se carga la imagen de fondo de acuerdo al tamaño de pantalla*/
     background-image: url("../assets/back.png");
   }
+
+ /* Estilos para el menu desplegable en pantallas medianas y pequeñas */
+ .header-small{
+  display: flex;
+}
+
+.header-small ul{
+  display: none;
+}
+
+/* Cuando se le da click al menu para que despliegue */
+.header-small input:checked  ~ ul{
+  display:block;
+}
+
+.header-small input {
+  display: none;
+}
+
+.header-small label {
+  /* Margenes superior e izquierdo */
+  margin: 2% 0 0 2%;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid rgb(222, 222, 222);
+  background: grey;
+  /* Borde redondeado dek boton */
+  border-radius: 5px;
+  /* dimensiones */
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  /* alineacion */
+  text-align: center;
+  user-select: none;
+}
+
+/* Estilo del boton cuando se pasa el mouse por encima*/
+.header-small label:hover{
+  background: rgb(202, 202, 202);
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+.header-small input:checked ~ label {
+  background: rgb(255, 255, 255);
+}
+/* Estilo del ul */
+.header-small ul{
+  margin-top:2%;
+  padding: 0;
+  width: 200px;
+  /* Para que quede junto al boton */
+  margin-left: 0;
+}
+
+/* Estilos de cada renglon de nuestro menu */
+.header-small li {
+  display: block;
+  background: rgba(211, 211, 211, 0.162);
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+.header-small li:hover {
+  filter: brightness(150%);
+  background: rgba(211, 211, 211, 0.2);
+
+}
+
+/* Pagina seleccionada de un color diferente para mejor legibilidad */
+.header-small a.active {
+  color: rgb(0, 183, 255);
+} 
+
+.header-small a {
+  color: rgb(209, 209, 209);
+} 
+
+.header{
+  display: none;
+}
+
+/* Se oculta la barra de navegacion de pantallas grandes debido a que ya usamos la configuracion para pantallas pequeñas */
+.header {
+  overflow: hidden;
+  padding: 2px 2px;
+}
 
   /* Se agrega padding, o espacios a la barra de navegacion*/
   .header {
@@ -309,6 +409,97 @@ body {
   body {
     /* Se carga la imagen de fondo de acuerdo al tamaño de pantalla*/
     background-image: url("../assets/Fondo2.jpeg");
+  }
+
+  /* Estilos para el menu desplegable en pantallas medianas y pequeñas */
+  .header-small{
+    display: flex;
+  }
+
+  .header-small ul{
+    display: none;
+  }
+
+  /* Cuando se le da click al menu para que despliegue */
+  .header-small input:checked  ~ ul{
+    display:block;
+  }
+  
+  .header-small input {
+    display: none;
+  }
+  
+  .header-small label {
+    /* Margenes superior e izquierdo */
+    margin: 2% 0 0 2%;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid rgb(222, 222, 222);
+    background: grey;
+    /* Borde redondeado dek boton */
+    border-radius: 5px;
+    /* dimensiones */
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    /* alineacion */
+    text-align: center;
+    user-select: none;
+  }
+  
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  .header-small label:hover{
+    background: rgb(202, 202, 202);
+  }
+  
+  /* Estilo del boton cuando el menú está expandido*/
+  .header-small input:checked ~ label {
+    background: rgb(255, 255, 255);
+  }
+  /* Estilo del ul */
+  .header-small ul{
+    margin-top:2%;
+    padding: 0;
+    width: 200px;
+    /* Para que quede junto al boton */
+    margin-left: 0;
+  }
+  
+  /* Estilos de cada renglon de nuestro menu */
+  .header-small li {
+    display: block;
+    background: rgba(211, 211, 211, 0.162);
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+
+  }
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+  .header-small li:hover {
+    filter: brightness(150%);
+    background: rgba(211, 211, 211, 0.2);
+
+  }
+
+  /* Pagina seleccionada de un color diferente para mejor legibilidad */
+  .header-small a.active {
+    color: rgb(0, 183, 255);
+  } 
+
+  .header-small a {
+    color: rgb(209, 209, 209);
+  } 
+
+  .header{
+    display: none;
+  }
+
+  /* Se oculta la barra de navegacion de pantallas grandes debido a que ya usamos la configuracion para pantallas pequeñas */
+  .header {
+    overflow: hidden;
+    padding: 2px 2px;
   }
 
   /* Se agrega padding, o espacios a la barra de navegacion*/

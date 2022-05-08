@@ -18,8 +18,26 @@
 </head>
 
 <body>
-      <!-- Cabecera que sera usada en todas las paginas -->
+  <!-- Menu desplegable para pantallas pequeñas -->
+  <nav class="header-small">
+    <!-- Se usa la estrategia del checkbox para decidir cuando desplegar el menu y cuando dejarlo como un boton -->
+    <input type="checkbox" id="menu">
+    <!-- Icono de 3 lineas -->
+    <label for="menu"> ☰ </label>
+    <!-- lista desplegable -->
+    <ul>
+      <!-- Items de la lista que son los mismos de la version de escritorio -->
+      <li><a class="active" href="index.html">Espacio</a></li>
+      <li><a href="character.html">Personajes</a></li>
+      <li><a href="activities.html">Actividades</a></li>
+      <li><a href="history.html">Historia</a></li>
+      <li><a href="credits.html">Creditos</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cabecera que sera usada en dispositivos grandes -->
   <header class="header">
+    <!-- Al darle click al incono nos redirige a la pagina de inicio -->
     <a href="index.html" class="logo"><img src="./assets/halo.png" alt="Halo logo" width="100" /></a>
     <div class="header-right">
       <!-- Cada uno de los items de la cabecera -->
@@ -33,7 +51,9 @@
 
   <!-- Titulo principal -->
   <h1>Lockout (Encerrona)</h1>
+  <!-- Divisor principal que contiene el cuerpo de la pagina -->
   <div class="main-index">
+    <!-- Imangen principal -->
     <img class="image-index" src="./assets/lock.jpeg" alt="encerrona" width="400" />
     <div>
       <!-- Textos del sitio -->
@@ -81,11 +101,7 @@
         Fragmentación. Sala del Acantilado está próxima a la azotea, el
         ascensor y el patio principal.
         <br><br>
-        <div id="otros">
-          <p>
-            Otras zonas de Encerrona:
-          </p>
-        </div>
+        Otras zonas de Encerrona:
         <br><br>
         <!-- Lista -->
         <ul>
@@ -98,15 +114,15 @@
             Laboratorios</li>
         </ul>
         <br><br>
-        <!-- Enlaces externos -->
-        <p class="text-index">
+      </p>
+      <!-- Enlaces externos -->
+      <p class="text-index">
 
-          Para ver más información puede acceder a <a href="https://halo.fandom.com/es/wiki/Encerrona_(mapa)">este
-            enlace</a>
-        </p>
+        Para ver más información puede acceder a <a href="https://halo.fandom.com/es/wiki/Encerrona_(mapa)">este
+          enlace</a>
       </p>
 
-
+      <!-- Saltos de linea para finalizar -->
       <br /><br /><br />
     </div>
   </div>
