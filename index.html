@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Caracteres a usar -->
   <meta charset="UTF-8" />
@@ -11,44 +10,42 @@
   <!-- Icono que se ve en las pestañas del navegador -->
   <link rel="shortcut icon" type="image/x-icon" href="./assets/halo.png">
   <link href="./styles/index.css" rel="stylesheet" type="text/css" />
+  <script src="mapa.js"></script>
   <style>
     /* Como la fuente es externa y no viene instalada la importamos de Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200&display=swap');
   </style>
 </head>
 
+
+
 <body>
   <!-- Menu desplegable para pantallas pequeñas -->
   <nav class="header-small">
-    <!-- Se usa la estrategia del checkbox para decidir cuando desplegar el menu y cuando dejarlo como un boton -->
     <input type="checkbox" id="menu">
-    <!-- Icono de 3 lineas -->
     <label for="menu"> ☰ </label>
-    <!-- lista desplegable -->
     <ul>
-      <!-- Items de la lista que son los mismos de la version de escritorio -->
       <li><a class="active" href="index.html">Espacio</a></li>
       <li><a href="character.html">Personajes</a></li>
       <li><a href="activities.html">Actividades</a></li>
       <li><a href="history.html">Historia</a></li>
+      <li><a href="map.html">Mapa</a></li>
       <li><a href="credits.html">Creditos</a></li>
     </ul>
   </nav>
 
   <!-- Cabecera que sera usada en dispositivos grandes -->
   <header class="header">
-    <!-- Al darle click al incono nos redirige a la pagina de inicio -->
     <a href="index.html" class="logo"><img src="./assets/halo.png" alt="Halo logo" width="100" /></a>
     <div class="header-right">
-      <!-- Cada uno de los items de la cabecera -->
       <a class="active" href="index.html">Espacio</a>
       <a href="character.html">Personajes</a>
       <a href="activities.html">Actividades</a>
       <a href="history.html">Historia</a>
+      <a href="map.html">Mapa</a>
       <a href="credits.html">Creditos</a>
     </div>
   </header>
-
   <!-- Titulo principal -->
   <h1>Lockout (Encerrona)</h1>
   <!-- Divisor principal que contiene el cuerpo de la pagina -->

@@ -169,6 +169,86 @@ body {
     color: aqua;
     text-decoration: none;
   }
+
+  /* Estilos nuevos ultima entrega */
+  .mapa {
+    position: relative;
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 20px
+  }
+
+    /*Estilos para cada uno de los puntos en el mapa interactivo*/
+  .punto1 {
+    position:absolute; /*Segun la indicacion esta linea permite dejar los botones fijos*/
+    z-index:2;
+    width:3%;
+    bottom:600px;
+    left:43.5%;
+      /*background-color: aqua;*/
+  }
+  .punto1:hover{
+      width: 4%;
+      
+  }
+  .punto2 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom: 30%;
+    left:43.5%;
+      /*background-color: aqua;*/
+  }
+  .punto2:hover{
+      width: 4%;
+  }
+  .punto3 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom: 20%;
+    left:28%;
+      /*background-color: aqua;*/
+  }
+  .punto3:hover{
+      width: 4%;
+  }
+  .punto4 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom:60%;
+    left:65%;
+      /*background-color: aqua;*/
+  }
+  .punto4:hover{
+      width: 4%;
+  }
+  .punto5 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom:10%;
+    left:57%;
+      /*background-color: aqua;*/
+  }
+  .punto5:hover{
+      width: 4%;
+  }
+
+  .reinicio {
+    position:absolute;
+    z-index:2;
+    width:4%;
+    bottom:80%;
+    left:90%;
+      text-align: start;
+      /*background-color: aqua;*/
+  }
+  .reinicio:hover{
+      width: 5%;
+  }
 }
 
 /* para pantallas que midan entre 800px y 1200px de ancho */
@@ -401,6 +481,86 @@ body {
   li a {
     color: aqua;
     text-decoration: none;
+  }
+
+  /* Estilos nuevos ultima entrega */
+  .mapa {
+    position: relative;
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 20px
+  }
+
+    /*Estilos para cada uno de los puntos en el mapa interactivo*/
+  .punto1 {
+    position:absolute; /*Segun la indicacion esta linea permite dejar los botones fijos*/
+    z-index:2;
+    width:3%;
+    bottom:600px;
+    left:43.5%;
+      /*background-color: aqua;*/
+  }
+  .punto1:hover{
+      width: 4%;
+      
+  }
+  .punto2 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom: 30%;
+    left:43.5%;
+      /*background-color: aqua;*/
+  }
+  .punto2:hover{
+      width: 4%;
+  }
+  .punto3 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom: 20%;
+    left:28%;
+      /*background-color: aqua;*/
+  }
+  .punto3:hover{
+      width: 4%;
+  }
+  .punto4 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom:60%;
+    left:65%;
+      /*background-color: aqua;*/
+  }
+  .punto4:hover{
+      width: 4%;
+  }
+  .punto5 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom:10%;
+    left:57%;
+      /*background-color: aqua;*/
+  }
+  .punto5:hover{
+      width: 4%;
+  }
+
+  .reinicio {
+    position:absolute;
+    z-index:2;
+    width:4%;
+    bottom:80%;
+    left:90%;
+      text-align: start;
+      /*background-color: aqua;*/
+  }
+  .reinicio:hover{
+      width: 5%;
   }
 }
 
@@ -635,5 +795,85 @@ body {
   li a {
     color: aqua;
     text-decoration: none;
+  }
+
+  /* Estilos nuevos ultima entrega */
+  .mapa {
+    position: relative;
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 20px
+  }
+
+    /*Estilos para cada uno de los puntos en el mapa interactivo*/
+  .punto1 {
+    position:absolute; /*Segun la indicacion esta linea permite dejar los botones fijos*/
+    z-index:2;
+    width:3%;
+    bottom:600px;
+    left:43.5%;
+      /*background-color: aqua;*/
+  }
+  .punto1:hover{
+      width: 4%;
+      
+  }
+  .punto2 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom: 30%;
+    left:43.5%;
+      /*background-color: aqua;*/
+  }
+  .punto2:hover{
+      width: 4%;
+  }
+  .punto3 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom: 20%;
+    left:28%;
+      /*background-color: aqua;*/
+  }
+  .punto3:hover{
+      width: 4%;
+  }
+  .punto4 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom:60%;
+    left:65%;
+      /*background-color: aqua;*/
+  }
+  .punto4:hover{
+      width: 4%;
+  }
+  .punto5 {
+    position:absolute;
+    z-index:2;
+    width:3%;
+    bottom:10%;
+    left:57%;
+      /*background-color: aqua;*/
+  }
+  .punto5:hover{
+      width: 4%;
+  }
+
+  .reinicio {
+    position:absolute;
+    z-index:2;
+    width:4%;
+    bottom:80%;
+    left:90%;
+      text-align: start;
+      /*background-color: aqua;*/
+  }
+  .reinicio:hover{
+      width: 5%;
   }
 }
